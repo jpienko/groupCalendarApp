@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+
+$backgroundcolor: beige;
+$buttoncolor: rgb(223, 166, 92);
+$buttontext: white;
+$titlecolor: rgb(250, 200, 85);
+$subtitlecolor: rgb(250, 200, 85);
+$regulartextcolor: black;
+$smalltextcolor: gray;
+$bordercolor: rgb(223, 166, 92);
+$placeholdercolor: rgba(223, 166, 92, 0.664);
+
+
+.background {
+  background-color: $backgroundcolor;
+}
+
+.buttons {
+  color: white;
+  border-radius: 40%;
+  height: 30px;
+  font-size: 15px;
+}
+
+.title {
+  color: $titlecolor;
+  font-size: 25px;
+}
+
+.subtitle {
+  color: $subtitlecolor;
+  font-size: 18px;
+}
+
+.regular-text {
+  color: $regulartextcolor;
+  font-size: 15px;
+}
+
+.small-text {
+  color: $smalltextcolor;
+  font-size: 12px;
+}
+
+input {
+  color: $regulartextcolor;
+  font-size: 15px;
+  border-radius: 5px;
+  border: 1px dotted $bordercolor;
+  margin-top: 15px;
+  padding: 10px;
+  outline: none;
+}
+
+input::placeholder {
+  color: $placeholdercolor;
+}
+
