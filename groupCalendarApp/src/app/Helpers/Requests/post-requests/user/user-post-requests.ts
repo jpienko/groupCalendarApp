@@ -28,10 +28,6 @@ export class UserPostRequests {
       _id: ''
     };
 
-    const aaa = this.request.baseHttpOneHeader<RootObject>('user/login', body);
-    aaa.subscribe(data => {
-      console.log(data);
-
-    });
+    return this.request.baseHttpOneHeader<RootObject>('user/login', body);
   }
 }

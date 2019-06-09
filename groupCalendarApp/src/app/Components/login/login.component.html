@@ -1,8 +1,12 @@
 <div>
-  <div class="login">
+  <div class="container">
     <h1 class="title">Zaloguj się</h1>
-    <input class="regular-text" type="text" placeholder="Username">
-    <input class="regular-text" type="text" placeholder="password" type= "password">
-    <button class= "register">Zarejstruj się jako nowy użytkownik</button>
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+      <input class="regular-text" type="text" formControlName="username" placeholder="Nazwa użytkownika">
+      <input class="regular-text" type="text" formControlName="password" placeholder="Hasło" type="password">
+      <button class="buttons" type="submit">Zaloguj</button>
+    </form>
+    <button class="register" [routerLink]="['/register']" routerLinkActive="active">Zarejstruj się jako nowy
+      użytkownik</button>
   </div>
 </div>

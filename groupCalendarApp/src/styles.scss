@@ -5,26 +5,37 @@ $buttoncolor: rgb(223, 166, 92);
 $buttontext: white;
 $titlecolor: rgb(250, 200, 85);
 $subtitlecolor: rgb(250, 200, 85);
-$regulartextcolor: black;
+$regulartextcolor: rgb(70, 70, 70);
+$inputtextcolor: black;
 $smalltextcolor: gray;
 $bordercolor: rgb(223, 166, 92);
 $placeholdercolor: rgba(223, 166, 92, 0.664);
-
 
 .background {
   background-color: $backgroundcolor;
 }
 
 .buttons {
-  color: white;
-  border-radius: 40%;
-  height: 30px;
+  color: $buttoncolor;
+  border-radius: 10px;
   font-size: 15px;
+  background-color: white;
+  border: $buttoncolor 1px solid;
+  padding: 8px;
+  min-width: 40px;
+  outline: none;
+  margin-top: 15px;
+}
+
+.buttons:hover {
+    box-shadow: 0 0 1em $bordercolor, 0 0 1em gray, 0 0 0.2em gray;
 }
 
 .title {
   color: $titlecolor;
   font-size: 25px;
+  padding: 20px;
+  text-align: center;
 }
 
 .subtitle {
@@ -42,8 +53,12 @@ $placeholdercolor: rgba(223, 166, 92, 0.664);
   font-size: 12px;
 }
 
+body {
+  background-color: rgba(255, 228, 196, 0.493);
+}
+
 input {
-  color: $regulartextcolor;
+  color: $inputtextcolor;
   font-size: 15px;
   border-radius: 5px;
   border: 1px dotted $bordercolor;
@@ -56,3 +71,17 @@ input::placeholder {
   color: $placeholdercolor;
 }
 
+.container {
+  height: 50%;
+  width: 50%;
+  border: 1px solid $bordercolor;
+  vertical-align: middle;
+  flex-direction: column;
+  min-width: 260px;
+  background-color: rgba(255, 228, 196, 0.623);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}

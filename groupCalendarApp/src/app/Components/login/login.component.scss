@@ -7,7 +7,7 @@ div {
   margin-top: -5px;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255, 228, 196, 0.493);
+  background-color: transparent;
 }
 
 .login {
@@ -28,7 +28,10 @@ div {
   margin-top: 15px;
 }
 
-
 .register:hover {
   text-shadow: 0 0 1em $bordercolor, 0 0 0.2em $bordercolor;
 }
+
+
+
+

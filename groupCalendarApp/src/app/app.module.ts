@@ -9,13 +9,18 @@ import { BaseGetRequest } from './Helpers/Requests/base-for-requests/base-get';
 import { BasePostRequest } from './Helpers/Requests/base-for-requests/base-post';
 import { RouterModule } from '@angular/router';
 import { LoginComponent } from './Components/login/login.component';
+import { RegisterComponent } from './Components/register/register.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
+    RegisterComponent,
   ],
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
@@ -23,7 +28,11 @@ import { LoginComponent } from './Components/login/login.component';
       {
         path: 'login',
         component: LoginComponent,
-    },
+      },
+      {
+        path: 'register',
+        component: RegisterComponent,
+      },
     ])
   ],
   providers: [
