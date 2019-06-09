@@ -10,15 +10,12 @@ export class UserPostRequests {
   constructor(private request: BasePostRequest) { }
 
   public signup(login: string, userpassword: string) {
-    const body = {
+    const body: User = {
       username: login,
-      password: userpassword
+      password: userpassword,
+      _id: ''
     };
-    const aaa = this.request.baseHttpOneHeader<RootObject>('user/signup', body);
-    aaa.subscribe(data => {
-      console.log(data);
-
-    });
+    return this.request.baseHttpOneHeader<RootObject>('user/signup', body);
   }
 
   public login(login: string, userpassword: string) {

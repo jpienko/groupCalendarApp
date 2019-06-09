@@ -72,8 +72,10 @@ input::placeholder {
 }
 
 .container {
-  height: 50%;
-  width: 50%;
+  min-width: 400px;
+  min-height: 380px;
+  padding-bottom: 30px;
+  padding: 10px;
   border: 1px solid $bordercolor;
   vertical-align: middle;
   flex-direction: column;
