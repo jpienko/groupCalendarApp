@@ -15,3 +15,8 @@ export interface RootObject {
   error: number;
   token: string;
 }
+
+export interface RootObjectSignup {
+  user: User;
+  error: number;
+}

@@ -30,11 +30,11 @@ export class RegisterComponent implements OnInit {
       const value = this.newProfileForm.value;
 
       if (value.password === value.repeatPassword) {
-        // this.loginUser.signup(value.username, value.password).subscribe(data => {
-        //   if (data.error === 201) {
-        //     console.log(data);
-        //   }
-        // });
+        this.loginUser.signup(value.username, value.password).subscribe(data => {
+          if (data.error === 201) {
+            console.log(data);
+          }
+        });
       } else {
         console.log('podane hasła różnią się');
       }

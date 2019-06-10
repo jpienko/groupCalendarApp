@@ -3,9 +3,9 @@
     <h1 class="title">Podaj wymagane dane i rozpocznij wspaniałą przygodę</h1>
     <form [formGroup]="newProfileForm" (ngSubmit)="onSubmit()">
       <input class="regular-text" type="text" formControlName="username" placeholder="Nazwa użytkownika">
-      <input class="regular-text" type="text" formControlName="username" placeholder="Podpis">
+      <input class="regular-text" type="text" formControlName="signature" placeholder="Podpis">
       <input class="regular-text" type="text" formControlName="password" placeholder="Hasło" type="password">
-      <input class="regular-text" type="text" formControlName="password" placeholder="Powórz hasło" type="password">
+      <input class="regular-text" type="text" formControlName="repeatPassword" placeholder="Powórz hasło" type="password">
 
 
       <button class="buttons" type="submit">Zarejestruj</button>
